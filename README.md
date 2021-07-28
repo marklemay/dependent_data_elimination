@@ -119,4 +119,5 @@ f' x = f'' ℕ x
 
 ### Has anyone workd out the meta theory of deppendnet pattern matching "directly"?
 * without, for instance, compiling to eliminators
+* was done in https://jesper.sikanda.be/files/overlapping-and-order-independent-patterns.pdf, but with non-standard ordering semantics
 
