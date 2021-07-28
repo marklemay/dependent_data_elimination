@@ -45,7 +45,7 @@ typing abstractly applies freely constructed data to each branch and then checks
 * simple
   * implementation is straitforward
   * possible to formally prove type soundness
-## Disadbantages
+## Disadvantages
 * very burecratic, and hard to use
 
 ## History
