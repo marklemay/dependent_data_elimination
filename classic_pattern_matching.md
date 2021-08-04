@@ -5,7 +5,7 @@ What makes haslkel style pattern matching good?
 * encourages structurally safe recursions
 
 Even then constructor only pattern matching can be inconvenient
-* Scala genralizes pattern matching to with https://docs.scala-lang.org/tour/extractor-objects.html
+* Scala genralizes pattern matching with https://docs.scala-lang.org/tour/extractor-objects.html
   * it is suprizing encapulation like this isn't supported in Haskell for instance
   * no longer enforces pattern term symetry
 * OCaml, rust allow "ranges" and alternatives to be matched
