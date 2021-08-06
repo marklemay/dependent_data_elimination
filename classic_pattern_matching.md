@@ -13,3 +13,5 @@ Even then constructor only pattern matching can be inconvenient
   * ranges can still allow for objects to be reconstituted with @, of couse that would justify anything
 * view pattern extention haskell
 * with monads in haskell
+
+Pattern matching is substantially generalized in the Curry Lang https://en.wikipedia.org/wiki/Curry_(programming_language)#:~:text=Curry%20is%20an%20experimental%20functional,programming%2C%20including%20constraint%20programming%20integration
