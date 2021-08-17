@@ -86,6 +86,26 @@ f'' A (N' .A) = true
 f' : Sm' ℕ -> Bool
 f' x = f'' ℕ x
 ```
+additionally 
+```agda
+postulate ff : ℕ -> ℕ
+postulate gg : ℕ -> ℕ
+
+data Id : ℕ -> ℕ -> Set where
+  rn :  (a : ℕ) -> Id a a
+
+iLike7 : Id (ff 2) (gg 4) ->  ℕ
+iLike7 (rn _) = 7
+```
+
+```
+I'm not sure if there should be a case for the constructor rn,
+because I get stuck when trying to solve the following unification
+problems (inferred index ≟ expected index):
+  a ≟ ff 2
+  a ≟ gg 4
+when checking that the pattern rn _ has type Id (ff 2) (gg 4)
+```
 
 ## Papers/Notes
 * [Coq92](https://wonks.github.io/type-theory-reading-group/papers/proc92-coquand.pdf)
