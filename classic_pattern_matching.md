@@ -1,5 +1,5 @@
-What makes haslkel style pattern matching good?
-* parrerns are an exact subset of terms, and an objecrt can be reconstituted from it's pattern
+What makes haskel style pattern matching good?
+* patterns are an exact subset of terms, and an objecrt can be reconstituted from it's pattern
 * works well with ML style type inference
 * coverage checking is relatively striaght forward
 * encourages structurally safe recursions
