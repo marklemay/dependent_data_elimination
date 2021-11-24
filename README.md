@@ -117,25 +117,27 @@ when checking that the pattern rn _ has type Id (ff 2) (gg 4)
 * [Epigram](http://www.e-pig.org/)
 * Eliminating dependent pattern matching.
 * [Towards a practical programming language based on dependent type theory](http://www.cse.chalmers.se/~ulfn/papers/thesis.pdf), chapter 2
-  * more of a summery, some of the judgments are missing case, presumably they are availible in the impementation
+  * more of a summery, some of the judgments are missing cases, presumably they are availible in the impementation of agda
 * [Jesper Cockx thesis](https://jesper.sikanda.be/files/thesis-final-digital.pdf)
 * https://jesper.sikanda.be/files/overlapping-and-order-independent-patterns.pdf
 * possibly related https://sozeau.gitlabpages.inria.fr/www/research/publications/Equations:_A_Dependent_Pattern-Matching_Compiler.pdf
+* really good https://www.cambridge.org/core/journals/journal-of-functional-programming/article/abs/proofrelevant-unification-dependent-pattern-matching-with-only-the-axioms-of-your-type-theory/E54D56DC3F5D5361CCDECA824030C38E
+  * so many examples of all the little things that can go wrong, even if you don't care about proof relevence per se.
 
 ## Questions
 ### pattern matching is sensative to the unification algorithm?
 * some choices need to be made
   * unique solution vs. satisfiable solution?
   * what are the flexable vars?
-  * since it is possible to embed computation in the argument of a type constructor, unification is at worst equivlent to deciding equality so ingeneral undecidable.
+  * since it is possible to embed computation in the argument of a type constructor, unification is at worst equivlent to deciding equality. so in general undecidable.
 
 ### why only allow patterns at definition sites?
-* is it only to make termination checking easier?
-
-
-### Is there a way to extend pattern matching so that it can handle all cases the case eliminator would?
+* is it only to make termination checking easier? unclear if it even does that?
 
 ### Has anyone workd out the meta theory of deppendnet pattern matching "directly"?
 * without, for instance, compiling to eliminators
 * was done in https://jesper.sikanda.be/files/overlapping-and-order-independent-patterns.pdf, but with non-standard ordering semantics
+
+### Is there a way to extend pattern matching so that it can handle all cases the case eliminator would?
+* Sort of, if eliminators are written out more verbosely.
 
